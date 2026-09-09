@@ -12,6 +12,9 @@
 .download-button{width:100%;font:inherit;font-weight:800}
 .download-button:disabled{cursor:not-allowed;opacity:.62}
 .download-card-note{margin:.85rem 0 0;color:var(--muted);font-size:.9rem}
+.mobile-download-grid{grid-template-columns:minmax(0,1fr);max-width:620px}
+.mobile-download-grid .download-card p{color:var(--muted)}
+.mobile-download-grid .download-button{display:flex;justify-content:center;cursor:default;opacity:.72}
 .release-card .release-details{margin-bottom:0}
 .downloads-links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.25rem}
 
