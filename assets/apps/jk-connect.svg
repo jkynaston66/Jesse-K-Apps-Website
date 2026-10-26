@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">JK Connect</title>
+  <desc id="desc">A green and gold home-and-connection mark for JK Connect.</desc>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="24" x2="472" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b5a49"/>
+      <stop offset="1" stop-color="#0b2d27"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="132" y1="112" x2="380" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f1cd78"/>
+      <stop offset="1" stop-color="#b9842e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <path d="M112 246 256 124l144 122v142a28 28 0 0 1-28 28H140a28 28 0 0 1-28-28V246Z" fill="none" stroke="url(#gold)" stroke-width="30" stroke-linejoin="round"/>
+  <path d="M204 416V294h104v122" fill="none" stroke="#f6f4eb" stroke-width="28" stroke-linejoin="round"/>
+  <circle cx="162" cy="278" r="22" fill="#f6f4eb"/>
+  <circle cx="350" cy="278" r="22" fill="#f6f4eb"/>
+  <path d="M184 278h42m60 0h42" stroke="#f6f4eb" stroke-width="18" stroke-linecap="round"/>
+</svg>
