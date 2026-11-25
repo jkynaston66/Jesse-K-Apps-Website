@@ -36,75 +36,45 @@
 <div class="container">
 <div class="breadcrumb"><a href="/">Home</a> / <a href="/privacy/">Privacy</a> / Jesse K Books for Android</div>
 <span class="eyebrow">Jesse K Books for Android</span>
-<h1>Privacy Policy</h1>
+<h1>Jesse K Books Android Privacy Supplement</h1>
 <p class="lead">How the Android application handles authentication, local accounting records, receipts, on-device text recognition, and encrypted backups.</p>
 </div>
 </section>
 <section>
 <div class="container legal-layout">
-<nav class="legal-nav" aria-label="Privacy policy sections">
-<strong>On this page</strong>
+<nav class="legal-nav" aria-label="Privacy policy sections"><strong>On this page</strong>
 <a href="#scope">Scope</a>
-<a href="#local-data">Local data</a>
-<a href="#authentication">Authentication</a>
-<a href="#ocr">Receipt OCR</a>
-<a href="#backups">Backups</a>
-<a href="#retention">Retention</a>
-<a href="#deletion">Account deletion</a>
-<a href="#contact">Contact</a>
-</nav>
+<a href="#local-data">Your local records</a>
+<a href="#authentication">Signing in</a>
+<a href="#ocr">Camera and receipt recognition</a>
+<a href="#backups">Backups and restore</a>
+<a href="#retention">Retention and access</a>
+<a href="#deletion">Deleting an account</a>
+<a href="#contact">Other requests and changes</a></nav>
 <article class="legal-document">
-<p><strong>Effective date: October 23, 2026</strong></p>
-
-<h2 id="scope">1. Scope and developer</h2>
-<p>This policy applies to the Jesse K Books Android application, package <code>com.jessekapps.books</code>. Jesse K Books is provided by Jesse K Apps, LLC. This Android policy supplements the broader <a href="/products/jesse-k-books/privacy/">Jesse K Books product privacy policy</a>. This Android policy controls where it describes Android-specific behavior differently.</p>
-<p>Jesse K Books is business recordkeeping software for adults. It is not directed to children.</p>
-
-<h2 id="local-data">2. Accounting and receipt information stored locally</h2>
-<p>Accounts, balanced journal transactions, customer names and contact details, receipt images, receipt drafts, extracted receipt fields, reports, and related bookkeeping records are stored in the application's private storage on the Android device. Extracted receipt fields may include merchant, date, total, and tax. The app does not retain the complete raw text recognized from a receipt after extracting those fields.</p>
-<p>Production synchronization is disabled. The current Android release does not upload accounting records, customer records, receipt contents, or receipt images to a Jesse K Apps server, Firebase database, Google Drive synchronization service, or other cloud accounting database.</p>
-<p>Receipt capture opens the Android system camera application and receives the resulting image through a temporary secure file grant. Jesse K Books does not request direct Android camera permission.</p>
-
-<h2 id="authentication">3. Firebase Authentication</h2>
-<p>The release build requires an existing Email/Password account. The Android app does not currently provide self-service account creation. Google and Microsoft federated sign-in are not enabled.</p>
-<p>Google Firebase Authentication processes the sign-in email address, a Firebase user identifier, Internet Protocol address, Firebase Android App ID, device platform, and Authentication SDK user-agent information for sign-in, account administration, security, fraud prevention, and abuse prevention. Firebase manages authentication credentials and tokens. Jesse K Books does not store the account's plaintext password in its local accounting database.</p>
-<p>Local books are separated by an identifier derived from the authenticated Firebase user identifier. Firebase authentication information may be processed where Google and its service providers operate, subject to Google's applicable Firebase terms and privacy documentation.</p>
-
-<h2 id="ocr">4. On-device receipt text recognition</h2>
-<p>Jesse K Books uses the bundled Google ML Kit text-recognition SDK. Receipt images and recognized receipt text are processed on the device and are not sent to Google as text-recognition feature input.</p>
-<p>Google states that ML Kit may transmit limited device and application information, a per-installation identifier, API configuration, feature versions, input and output sizes, event types, error codes, and performance metrics for service operation, diagnostics, analytics, maintenance, security, and abuse prevention. Google states that this diagnostic information is encrypted in transit and is not transferred to third parties.</p>
-
-<h2 id="backups">5. Encrypted backups and user-directed transfers</h2>
-<p>You may export an encrypted backup through Android's system document picker to a location you select. A backup can include the local accounting database and attached receipt files. Jesse K Books encrypts the backup using PBKDF2-HMAC-SHA256 password derivation and AES-256-GCM authenticated encryption.</p>
-<p>The backup password is held temporarily while you perform the export or restore. It is not persistently stored by Jesse K Books or sent to Jesse K Apps. Jesse K Apps cannot recover the password or decrypt the backup. The storage provider and destination you select may process the encrypted file under their own terms. You control exported files and any copies you share.</p>
-<p>Automatic Android cloud backup and device transfer are disabled for the application's private data.</p>
-
-<h2>6. Sharing, advertising, and sales</h2>
-<p>Jesse K Apps does not sell personal or business information and does not share it for cross-context behavioral advertising. The Android app contains no advertising SDK, bank connection, payment processing, general behavioral analytics SDK, Firebase accounting database, or production synchronization service.</p>
-<p>Firebase Authentication and ML Kit process the limited information described above as service providers used to provide authentication, diagnostics, maintenance, and security. A user-directed encrypted backup transfer is made to the destination the user selects.</p>
-
-<h2 id="retention">7. Retention and security</h2>
-<p>Local information remains on the Android device until app storage is cleared or the app is uninstalled. Reversing a posted accounting transaction preserves the accounting audit history rather than deleting the original entry. Jesse K Apps cannot remotely access or erase the device-local database. Exported backups remain in the selected destination until the user deletes them.</p>
-<p>Firebase Authentication account information remains in the Firebase project until the account is deleted, subject to limited provider retention for security, fraud prevention, backups, or legal compliance.</p>
-<p>The application uses app-private Android storage, disables automatic Android backup and device transfer, rejects cleartext network traffic, separates local books by authenticated user, and uses authenticated encryption for manual backups. Network service providers use encrypted transport. No storage or transmission method can guarantee absolute security.</p>
-
-<h2 id="deletion">8. Account deletion</h2>
-<p>To request deletion of the Firebase Authentication account used by Jesse K Books, follow the steps on the <a href="/privacy/jesse-k-books/delete-account/">Jesse K Books account-deletion page</a>.</p>
-<p>Jesse K Apps will complete a verified deletion request within 30 calendar days. If applicable law permits or requires additional time or retention, Jesse K Apps will notify the requester when permitted and explain the reason. Deletion stops future sign-in with that account.</p>
-<p>Account deletion cannot remotely erase information stored only on the user's device or in a user-selected backup destination. Before requesting deletion, export any backup the user needs. To erase local information, clear Jesse K Books storage in Android Settings or uninstall the app. Delete exported backup files directly from their storage destination.</p>
-<p>Jesse K Apps may retain a limited record of the deletion request and completion when reasonably necessary for security, fraud prevention, dispute resolution, or legal compliance.</p>
-
-<h2>9. Changes</h2>
-<p>This policy may be updated when the Android application, service providers, or legal requirements change. The effective date will be revised. Material changes will receive notice or consent when required.</p>
-
-<h2 id="contact">10. Contact</h2>
-<p>Privacy and software questions may be sent to <a href="mailto:support@jessekapps.com">support@jessekapps.com</a> or mailed to Jesse K Apps, LLC, 7090 N Oracle Rd, Ste 178 PMB 1265, Tucson, AZ 85704.</p>
-<p>Website visits are also subject to the <a href="/privacy/">Jesse K Apps Website Privacy Policy</a>.</p>
-<div class="legal-links">
+<p>Revision dated November 18, 2026</p>
+<h2 id="scope">Scope</h2>
+<p>This supplement covers Jesse K Books for Android (com.jessekapps.books). Read it with the Books Privacy Policy. This supplement controls where Android handles information differently. Jesse K Apps, LLC is responsible for the app. It is intended for adults in the United States.</p>
+<h2 id="local-data">Your local records</h2>
+<p>When you enter a transaction, add a customer or capture a receipt, the working records and attachments are kept in app-private device storage. Your books are separated using an identifier derived from the signed-in account. This edition has production synchronization disabled. It does not send your ledger or receipt images to a cloud accounting database. Turning off synchronization does not prevent the sign-in and diagnostic traffic described below.</p>
+<h2 id="authentication">Signing in</h2>
+<p>This Android edition uses an existing Firebase email and password account. It has no in-app account creation or Google or Microsoft federated login. Google handles credentials and tokens and processes the email, account ID, IP address, app ID, platform and SDK information needed for authentication, security and abuse prevention. Your plaintext password is not kept in the ledger. Google may process account and service data where it operates.</p>
+<h2 id="ocr">Camera and receipt recognition</h2>
+<p>The device’s camera app supplies the image to Books through a temporary file grant. Books uses the bundled Google ML Kit reader on your device. It extracts fields such as merchant, date, tax and total from the image. Books keeps the receipt and selected fields locally and does not retain the full recognized text after extraction. Check those fields before posting.</p>
+<p>Google’s SDK can send information about the app, device, installation, feature configuration, input and output sizes, errors, events and performance. These service diagnostics are separate from the receipt image and text used for recognition. Jesse K Apps does not use this information for cross-site advertising or sell it. This edition does not use an advertising SDK, behavioral analytics, a bank connection or a payment processor.</p>
+<h2 id="backups">Backups and restore</h2>
+<p>Android’s manual backup encrypts the accounting database and attachments with a password you choose. The backup format uses PBKDF2-HMAC-SHA256 for key derivation and AES-256-GCM for encryption and integrity. You pick where to save the encrypted file. The destination may be local or a storage service you choose. Jesse K Apps does not retain the backup password or a recovery copy. Keep the password separately and test a restore. The working database, a separately generated report and the encrypted backup are different files. Do not assume that every file you export has backup protection. Automatic Android backup and device-to-device transfer of private app data are disabled in this edition.</p>
+<h2 id="retention">Retention and access</h2>
+<p>An accounting reversal preserves the original posting history. Local files remain until removed using the app or Android storage controls. Deleting sign-in stops future authentication and can make existing books inaccessible. It does not remotely erase files on the device. Export needed records before deleting your account. Clearing app storage and uninstalling can remove all local business records on that installation. Separately remove saved backups and shared copies where you control them. The app rejects cleartext network traffic. Device protections and encrypted backups reduce risks but cannot guarantee security.</p>
+<h2 id="deletion">Deleting an account</h2>
+<p>Use the Android account-deletion instructions at <a href="https://jessekapps.com/privacy/jesse-k-books/delete-account/">https://jessekapps.com/privacy/jesse-k-books/delete-account/</a> or email <a href="mailto:support@jessekapps.com">support@jessekapps.com</a>. We verify identity, delete the account and associated personal data under our control, and explain any legally permitted retention. We will complete verified deletion requests within 30 calendar days, or sooner if required. If a lawful extension or retention applies, we will tell you the reason and timing when permitted. Google may retain limited service records for security, backup or legal purposes.</p>
+<h2 id="contact">Other requests and changes</h2>
+<p>The Books Privacy Policy explains support, access, correction, lawful disclosures, security incidents and changes. We will notify you of material changes and obtain consent where required. Email <a href="mailto:support@jessekapps.com">support@jessekapps.com</a> or write to Jesse K Apps, LLC, 7090 N Oracle Rd, Ste 178 PMB 1265, Tucson, AZ 85704.</p>
+</article><div class="legal-links">
 <a class="button secondary" href="/privacy/jesse-k-books/delete-account/">Delete an account</a>
 <a class="button secondary" href="/products/jesse-k-books/">Jesse K Books</a>
 </div>
-</article>
+
 </div>
 </section>
 </main>
